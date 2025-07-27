@@ -1,5 +1,39 @@
-# Physics-integrated variational autoencoders for robust and interpretable generative modeling
+# 🔬 phys-vae: Physics‑based Variational Autoencoder
 
+This repository contains a collection of Jupyter notebooks and bash scripts for training and evaluating **physics-informed variational autoencoders** across multiple datasets and experimental setups.
+
+---
+
+## 📦 Description
+
+- The project focuses on learning representations from datasets with underlying physics constraints.
+- It includes experiments across domains like **advection-diffusion**, **galaxy modeling**, **locomotion**, and **pendulum dynamics**.
+- Notebooks ending with `_new.ipynb` are the **latest and recommended versions** that generate results directly.
+
+---
+
+## 🧪 Available Notebooks
+
+| Domain             | Notebook(s)                              |
+|--------------------|-------------------------------------------|
+| Advection-Diffusion| `advdif_extpol.ipynb`, `advdif_new.ipynb` |
+| Galaxy             | `galaxy_new.ipynb`, `galaxy_randgen.ipynb`|
+| Locomotion         | `locomotion_new.ipynb`, `locomotion_reconst.ipynb` |
+| Pendulum           | `pendulum_new.ipynb`, `pendulum_cntfact.ipynb`     |
+
+---
+
+## 🚀 Running All Experiments
+
+To run each full experiment suite with one command, use the provided scripts:
+
+```bash
+./run_all_advdif.sh       # Advection-Diffusion
+./run_all_galaxy.sh       # Galaxy generation
+./run_all_locomotion.sh   # Locomotion dataset
+./run_all_pendulum.sh     # Pendulum experiments
+# Physics-integrated variational autoencoders for robust and interpretable generative modeling
+```
 Implementation of the method presented in the following paper:
 
 Naoya Takeishi and Alexandros Kalousis.
@@ -28,6 +62,3 @@ First, create data with `makedata.sh` or `makedata.m` in each data directory. Yo
 You can train NN+phys(+reg) model using scripts [EXPTNAME]\_train.sh, for example by `. advdif_train.sh physnn`.
 Then the .ipynb files perform some experiments shown in the paper.
 
-## Author
-
-**Naoya Takeishi** - [https://ntake.jp/](https://ntake.jp/)
