@@ -1,0 +1,23 @@
+{
+    "dt": 0.02,
+    "dx": 0.1,
+    "len_episode": 50,
+    "n_grids": 20,
+    "n_samples": 1000,
+    "name": "train",
+    "noise_std": 0.001,
+    "outdir": "./",
+    "range_ccoeff": [
+        0.01,
+        0.1
+    ],
+    "range_dcoeff": [
+        0.01,
+        0.1
+    ],
+    "range_init_mag": [
+        0.5,
+        1.5
+    ],
+    "seed": 1234
+}

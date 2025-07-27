@@ -1,0 +1,54 @@
+{
+    "activation": "elu",
+    "adam_eps": 0.001,
+    "balance_dataug": 0.0,
+    "balance_kld": 1.0,
+    "balance_lact_dec": 0.0,
+    "balance_lact_enc": 0.0,
+    "balance_unmix": 0.0,
+    "batch_size": 200,
+    "cuda": true,
+    "data_augmentation": 20,
+    "datadir": "./data/galaxy/",
+    "dim_z_aux2": 6,
+    "epochs": 10000,
+    "epochs_pretrain": 0,
+    "grad_clip": 5.0,
+    "hidlayers_aux2_enc": [
+        256,
+        128
+    ],
+    "hidlayers_z_phy": [
+        64,
+        32
+    ],
+    "learning_rate": 0.001,
+    "no_phy": true,
+    "num_units_feat": 512,
+    "num_workers": 0,
+    "outdir": "./out_galaxy_nnonly/",
+    "range_A": [
+        0.1,
+        1.5
+    ],
+    "range_I0": [
+        0.1,
+        1.0
+    ],
+    "range_e": [
+        0.0,
+        0.999
+    ],
+    "range_theta": [
+        0.0,
+        3.142
+    ],
+    "rescale": false,
+    "save_interval": 9999999,
+    "seed": 1234567890,
+    "train_size": 400,
+    "unet_size": 2,
+    "valid_size": 100,
+    "weight_decay": 1e-06,
+    "x_lnvar": -11.0
+}
